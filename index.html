@@ -333,7 +333,7 @@ display: block;
 background-color:#2E4052;
 color:#f2f2f2;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 800px) {
 .topnav.responsive {position: relative; z-index:5; background-color:#2E4052; color:white;}
 .dropdown {
 float: left;
@@ -347,8 +347,8 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 top:15%;
-width:25%;
-left:37.5%;
+width:30%;
+left:35%;
 position:absolute;
 }
 .topnav.responsive .icon {color:white;
@@ -359,9 +359,8 @@ display: block;
 text-align: left;	
 }
 #cont1{
-top:40%;
+top:44%;
 z-index:0;
-text-align:middle;
 position:absolute;
 display:block;
 overflow:hidden;
@@ -372,7 +371,13 @@ text-align:center;
 text-decoration:none;
 color:#2E4052;
 font-family:candara;
-font-size:64px;
+font-size:18px;
+}
+.Mugallym{
+font-size:16px;
+}
+.nakyl{
+font-size:14px;
 }
 .mine{
 text-align:center;
@@ -389,20 +394,18 @@ th, td {
   border-bottom: 1px solid #2E4052;
 }
 }
-#footer1{
-  font-size:48px;
-}
+
 
 </style>
 </head>
 
-<body bgcolor="#CDD9BF" onload="myFunction()" style="margin:0;">
+<body bgcolor="#CDD9BF" onload="mynewFunction()" style="margin:0;">
 <div id="loader"></div>
 
 <div style="display:none;" id="myDiv">
 
 <div id="footer"></div>
-<div id="footer1"><font style="font-family:Candara;" class="Mugallym">MUGALLYM</font><br>"Mal paýlasaň dagar, ylym paýlasaň köpeler"<br><b>Paýhas Çeşmesi</b></div>
+<div id="footer1"><font style="font-family:Candara;" class="Mugallym">MUGALLYM</font><br><font class="nakyl">"Mal paýlasaň dagar, ylym paýlasaň köpeler"<br><b>Paýhas Çeşmesi</b></font></div>
 <div id="footer2"></div>
 <div id="footer3">
 <div class="social-buttons">
@@ -503,7 +506,7 @@ function topFunction() {
 
 var myVar;
 
-function myFunction() {
+function mynewFunction() {
   myVar = setTimeout(showPage, 3000);
 }
 
