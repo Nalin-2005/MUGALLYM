@@ -24,9 +24,9 @@
 		z-index: 999;
 	}
 /*scroll down*/
-	::-webkit-scrollbar {width: 10px;}
-	::-webkit-scrollbar-track {background: #f2f2f2; box-shadow: inset 0 0 5px grey;}
-	::-webkit-scrollbar-thumb {background: #4a6882;  height:24%;}
+	::-webkit-scrollbar {width: 10px; }
+	::-webkit-scrollbar-track {background: #f2f2f2; box-shadow: inset 0 0 5px grey; border-radius: 12px; margin-top: 30px; margin-bottom: 30px;}
+	::-webkit-scrollbar-thumb {background: #4a6882;  height:24%; border-radius: 12px;}
 	::-webkit-scrollbar-thumb:hover {background: #2E4052;}
 /*social media buttons */
 	.social-buttons {
@@ -170,7 +170,6 @@
 	.tooltip .tooltiptext {
 	  	visibility: hidden;
 	  	width: 120px;
-	  
 	  	color: #f2f2f2;
 	  	font-size: 16px;
 	  	font-family:'Century Gothic';
@@ -253,11 +252,11 @@
   		font-size: 1vw;
   		border: none;
   		outline: none;
-  		color: #f2f2f2;
+  		color: #2E4052;
   		padding: 10px 10px;
   		font-family: 'Candara';
   		font-weight: bold;
-  		background-color: #2E4052;}
+  		background-color: #f2f2f2;}
 	.navbar a:hover, .dropdown:hover .dropbtn {
  		background-color:#4a6882;
   		color:#f2f2f2;}	
@@ -281,110 +280,125 @@
 	.dropdown:hover 
 	.dropdown-content {display: block;}
 /*body*/
-	#dersbox{
-		position: absolute;
-		top:0;
-		left: 0;
-		height: 10%;
-		width: auto;
-		color: #2E4052;
-		font:bold 2vw 'candara';
+	#contt{
+	  display: block;
+	  position: absolute;
+	  left: 20%;
+	  top:17%;
+	  width: 60%;
+	  height: 55%;
 	}
-	#contbox{
-		position: absolute;
-		top:16%;
-		left:15%;
-		height:60%;
-		width: 70%;
+	.tablink {
+	  display: inline-block;
+	  position: relative;
+	  background-color:#ababab;
+	  color: #f2f2f2;
+	  float: left;
+	  border: 2px solid #2E4052;
+	  border-bottom: none;
+	  outline: none;
+	  cursor: pointer;
+	  height: 10%;
+	  overflow: hidden;
+	  font-size:;
+	  width:15%;
+	  border-radius: 12px 12px 0 0;
+	  font-size: 1vw;
+	  font-family: 'Candara';
+	  font-weight: bold;
 	}
-	#tablebox{
-		position: absolute;
-		bottom:5%;
-		left:0;
-		width:100%;
-		height:70%;
-		overflow: auto;
-		border-bottom:1px solid grey;
-		border-top:1px solid grey;
-	}
-	#searchbox{
-		position: absolute; 
-		width: 100%; 
-		top:12%;
-		height: 10%;
-	}
-	#starcost{
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		height: 5%;
-		width: 100%;
-		color:#2E4052;
-		padding-top: 4px;
-		font:0.8vw candara;	
-	}
-	#starcost a{
-		text-decoration: underline;
-		color: #2E4052;
-	}
-	/*table*/
-		#myInput {
-		  	width: 50%; /* Full-width */
-		  	font-size: 1.2vw; /* Increase font-size */
-		  	color: #2E4052;
-		  	font-family: 'candara';
-		  	background-color: #f2f2f2;
-		  	border:none;
-		  	border-bottom:solid 2px #2E4052;
-		  	}
-		  #myInput :focus{
-		  	border:none;
-		  	border-top:solid 2px #2e4052;
-		  }
-		#myTable {
-			border-collapse: collapse;
-			width: 100%;
-			border: 1px solid grey;
-			font-size: 1.1vw;
-			font-family: 'Century Gothic';
-		}
-		#myTable a{
-			text-decoration: none;
-			color:#2E4052;
-		}
-		#myTable a:hover{
-			color: #f2f2f2;
-		}
-		#myTable th, #myTable td {
-		  	text-align: left;
-		  	padding: 6px;
-		  	padding-left: 12px;
-		}
-		#myTable tr {
-		 	border-bottom: 1px solid grey;
-			color:#2E4052;
-		}
-		#myTable td{
-			border-left: 1px solid grey;
-		}
-		#myTable tr.header{
-		  	background-color: #2E4052;
-		  	color: #f2f2f2;
 
-		}
-		#myTable tr:hover{
-			color: #f2f2f2;
-			background-color: #4a6882;
-		}
-		#myTable tr:hover a{
-			color: #f2f2f2;
-		}
-		#myTable td:hover a{
-			color:#f2f2f2;
-		}
-		#myTable tr.header:hover{
-			background-color: #2E4052;
-		}
+	.tablink:hover {
+	  background-color: #4a6882;
+	}
+
+	/* Style the tab content */
+	.tabcontent{
+	  display: inline-block;
+	  position: absolute;
+	  margin: auto auto;
+	  overflow: hidden; 
+   	  height: 90%;
+	  bottom: 0;
+	  width: 100%;
+	  border: 2px solid #2e4052;
+	  border-radius: 0 32px 32px 32px;
+	  box-shadow: 0 0 15px 0 inset #2E4052;
+	}
+	.cconte{
+		display: block;
+		position: absolute;
+		overflow: auto;
+		width: 95%;
+		left: 2%;
+		height: 92%;
+		top:4%;
+		text-align:;
+	}
+	#London {background-color:#f2f2f2;}
+	#Paris {background-color:#f2f2f2;}
+	#Tokyo {background-color:#f2f2f2;}
+	.header{
+		font-weight: bold; font-family: 'Candara'; color: #2E4052; font-size: 2.3vw; text-align: center;
+	}
+	.logwid{
+		width: 10%;
+	}
+	.subheader{
+		display: inline-block;
+		font-family: 'Candara';
+		color: #2E4052;
+		font-size: 1.4vw;
+		width: auto;
+		background-color: #f1f1f1;
+		margin:auto;
+		margin-left: 60px;
+		margin-top: 12px;
+		margin-bottom: 12px;
+		border-bottom:1px solid #2E4052; 
+		box-shadow: 0 -10px 15px -10px inset grey;
+		border-radius: 12px;
+		text-align: center;
+	}
+	.intext{
+		display:inline-block;
+		font-family:helvetica;
+		color: #2E4052;
+		font-size: 1.1vw; 
+		float: left; 
+		text-align:justify; 
+		margin-top: 10px; 
+		margin-bottom:10px;
+		margin-right: 35px;
+		margin-left: 35px;
+		text-indent: 30px;
+	}
+	.kanu{
+		margin-bottom: auto; margin-left: 65%; margin-top: 70px; font-weight: bold;
+	}
+	.instext{
+		display:inline-block;
+		font-family:helvetica;
+		color: #2E4052;
+		font-size: 0.9vw; 
+		float: left; 
+		text-align:justify; 
+		margin-top: 40px; 
+		margin-bottom:10px;
+		margin-right: 35px;
+		margin-left: 35px;
+	}
+	.context{
+		display:inline-block;
+		font-family:helvetica;
+		color: #2E4052;
+		font-size: 0.9vw;
+		text-align:right; 
+		margin: auto;
+		margin-right: 35px;
+		margin-left: 65%;
+		text-indent: 30px;
+	}
 /*footer*/
 	#footer{
 		position: absolute;
@@ -433,13 +447,13 @@
 		display: none;
 	}
 	.copyright{
-		color: #adadad;
-		font-family: 'Century Gothic';
-		padding-top: 2px;
+		padding-top: 5px;
 		font-size: 0.8vw;
+		font-family: 'Century gothic';
+		color:#adadad;
 	}
 /*phone*/
-	@media screen and (max-width: 800px){
+@media screen and (max-width: 800px){
 		/*header*/
 			#navigation-container{
 				height: 14%;
@@ -508,62 +522,75 @@
 			.dropdown-content a:hover {
 	  			background-color: #4a6882;
 	  			color:#f2f2f2;}
-		/*table*/
-			#contbox{
-				left:4%;
-				width: 92%;
+		/*body*/
+			#contt{
+			  left: 4%;
+			  width: 92%;
+			  height: 57%;
 			}
-			#dersbox{
-				top:3%;
+			.tablink {
+			  width:25%;
+			  font-size: 3.4vw;
+			 }
+			 .logwid{
+			 	display: none;
+			 }
+			/* Style the tab content */
+			.header{
+				font-size: 8vw; text-align: center;
+			}
+			.subheader{
+				font-size: 4.4vw;
+				width: auto;
+				background-color: #f1f1f1;
+				margin:auto;
+				margin-left: 20px;
+				margin-top: 12px;
+				margin-bottom: 12px;
+				border-bottom:1px solid #2E4052; 
+				box-shadow: 0 -10px 15px -10px inset grey;
+				border-radius: 12px;
+				text-align: center;
+				max-width: 80%;
+			}
+			.intext{
+				display:inline-block;
+				font-family:helvetica;
 				color: #2E4052;
-				font:bold 5vw 'candara';
+				font-size: 3.8vw; 
+				float: left; 
+				text-align:justify; 
+				margin-top: 10px; 
+				margin-bottom:10px;
+				margin-right: 10px;
+				margin-left: 20px;
+				text-indent: 30px;
 			}
-			#starcost{
-				font-size: 2.8vw;
+			.kanu{
+			margin-bottom: auto; margin-left: 30%; margin-top: 70px; font-weight: bold;
 			}
-			#myInput {
-			  	width: 50%; /* Full-width */
-			  	font-size: 4.2vw; /* Increase font-size */
-			  	color: #2E4052;
-			  	font-family: 'candara';
-			  	background-color: #f2f2f2;
-			  	border:none;
-			  	border-bottom:solid 2px #2E4052;
-			  	}
-			#myInput :focus{
-			  	border:none;
-			  	border-top:solid 2px #2e4052;
+			.instext{
+				display:inline-block;
+				font-family:helvetica;
+				color: #2E4052;
+				font-size: 2.9vw; 
+				float: left; 
+				text-align:justify; 
+				margin-top: 10px; 
+				margin-bottom:10px;
+				margin-right: 35px;
+				margin-left: 35px;
 			}
-			#myTable {
-				border-collapse: collapse;
-				width: 100%;
-				border: 1px solid grey;
-				font-size: 3.1vw;
-				font-family: 'Century Gothic';
-			}
-			#myTable a{
-				text-decoration: none;
-				color:#2E4052;
-			}
-			#myTable th, #myTable td {
-			  	text-align: left;
-			  	padding: 6px;
-			  	padding-left: 12px;
-			}
-			#myTable tr {
-			 	border-bottom: 1px solid grey;
-				color:#2E4052;
-			}
-			#myTable tr.header{
-			  	background-color: #2E4052;
-			  	color: #f2f2f2;
-			}
-			#myTable tr:hover{
-				background-color: #4a6882;
-				color:#F2F2F2;
-			}
-			#myTable tr.header:hover{
-				background-color: #2E4052;
+			.context{
+				display:inline-block;
+				font-family:helvetica;
+				color: #2E4052;
+				font-size: 2.9vw;
+				text-align:right; 
+				margin: auto;
+				margin-right: 10px;
+				margin-left: 30%;
+				text-indent: 30px;
 			}
 		/*footer*/
 					#footer{
@@ -634,6 +661,9 @@
 					.tooltip .tooltiptext{
 						top:-90%;	
 					}
+					.tooltip1 .tooltiptext1{
+						font-size: 3vw;
+					}
 			}
 		/*phonescreen 750px*/
 			@media screen and (max-width: 3in){
@@ -689,197 +719,74 @@
 		</div>		
 	</div>
 <!-- body-->
-	<div id="contbox">
-		<div id="dersbox">Iňlis dili dersinden görkezme sapaklar</div>
-		<div id="searchbox">
-		<input type="text" id="myInput" onkeyup="tablefunction()" placeholder="Gözle..." title="Kitabyň adyny ýaz!">
+	<div id="contt">
+
+	<button class="tablink" onclick="openCity('London', this, '#2e4052', '34px')" id="defaultOpen">Biz Barada</button>
+	<button class="tablink" onclick="openCity('Paris', this, '#2e4052', '34px')">Goşant goş</button>
+	<button class="tablink" onclick="openCity('Tokyo', this, '#2e4052', '34px')">FAQ</button>
+
+
+	<div id="London" class="tabcontent">
+		<div class="cconte">
+			<br><br>
+			<div class="header"><img src="i/logo.png" class="logwid"><br>Biz Barada</div><br>
+			
+			<p class="subheader"> &nbsp;Biz kim we maksadymyz: &nbsp;</p><br>
+			<p class="intext">"Mugallym" web-sahypasy öwrenme maksatly döredilen we gelejekde dürli maksatlary öňüne goýan web-sahypadyr!</p><br>
+			<p class="intext">"Mugallym" web-sahypasy özünde birnäçe dersleriň temalaryna degişli elektron görkezme sapaklary (prezentasiýalary) jemleýär. "Mugallym"-yň baş maksady mugallymlara derslerde peýdalanyp boljak taýýar görkezeme sapaklary mugt we elýeter görnüşlerde ýetirmekdir. Mundan başga-da biziň web-sahypamyzyň esasy maksatlardan biri türkmen dili we edebiýat (türkmen dilinde) derslerinde degişli görkezme sapaklary köpçülige ýetirmekdir.</p><br>
+			<p class="intext">Bu ýer-de siz mundan başga-da onlarça elektron kitaplary hem mugt ýükläp bilersiňiz. Biz bu ýerdäki kitaplarymyzyň sanyny ýene-de artdyrmana dowam ederis! Biz şeýle-de sizi özümiziň Telegramdaky kanalymyza we Telegram grupbamyza çagyrýarys! Siz ol ýerlerde hem birnäçe dillerdäki kitaplary (çeper eserler, ders kitaplar, ylmy kitaplar) tapyp bilersiňiz!</p><br>
+			<p class="intext">Kiçi ýalňyşlyklarymyz üçin sizden ötünç soraýarys. "Mugallym" öz üstünde işlemäge dowam eder!</p>
+			
+			<p class="subheader" style="margin-top: 35px;"> &nbsp;Minnetdarlygymyzy bildirýäris: &nbsp;</p><br>
+			<p class="intext">"Mugallym" web-sahypasy döretmekde uly ýardam beren Daşoguz şäheriniň 26-njy orta mekdebiniň mugallymlary Batyr Hojaýewe we Nury Kemalowa uly minnetdarlygymyzy bildirýäris!</p><br>
+			<br>
+			<p class="intext" style="margin-top: 30px;">Biziň Android <a href="app/Mugallym.apk">programmamyzy</a> ýükläp alyň!</p><br>
+			
+			<p class="intext kanu">Kakajan NURMYRADOV</p><br><br>
+			<p class="context">Phone: +993 61 191440</p><br>
+			<p class="context">Email: kakajan2n@gmail.com</p><br>
+			<p class="context"><a href="https://www.linkedin.com/in/kakajan-nurmyradov-4477641ba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BruauSPmjR%2BGOMJORMgDCUQ%3D%3D" target="_blank">Connect</a> me on LinkedIn</p><br>
+			<p class="context"><a href="https://github.com/kakajannurmyradov" target="_blank">Follow</a> me on GitHub</p><br><br>
 		</div>
-		<div id="tablebox">
-			<table id="myTable">
-				<tr class="header">
-					<th style="width:80%;">Temanyň ady</th>
-				    <th style="width:20%;">Göwrümi</th>
-				</tr>
-				<tr>
-					<td><a href="https://drive.google.com/file/d/1CP_w70fnQpYwEXzS8Uol4TyIXX46Rbvj/view?usp=sharing" target="_blank">Active vs Passive Voice</a></td>
-					<td>0.12 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1XzF9ylUsHkpfL0vwPYTY4I_jYIbFPzJ9/view?usp=sharing" target="_blank">Adjectives</a></td>
-				    <td>1.60 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/19S70qZ3zAwmaCoRgv7kdMEoV_4aSwAQ7/view?usp=sharing" target="_blank">Alphabet</a></td>
-				    <td>0.75 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1RdLcQy6vLyHVLp8tZHxwTLlljq4NFy8E/view?usp=sharing" target="_blank">American holidays</a></td>
-				    <td>3.99 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1om3agEvrOU85jKINBC9Zl6p8os-0zqEO/view?usp=sharing" target="_blank">Ay the zoo</a></td>
-				    <td>3.99 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1dQVDyrI3b6EbKdVfwnkGAi1_10hVHHG4/view?usp=sharing" target="_blank">British holidays</a></td>
-				    <td>12.1 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1kDGmcCpb_-OQedI4nRDk46fsG-_w9Q-p/view?usp=sharing" target="_blank">Comparative & Superlative</a></td>
-				    <td>1.41 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1Bli2QGuXTarHClYi2qzMlT9lsG-R-Uk_/view?usp=sharing" target="_blank">Comparison of adjectives</a></td>
-				    <td>0.15 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1gBOlSueje8KLnZuKzkBa8aSuymtz-E4S/view?usp=sharing" target="_blank">Comparison of adjectives 2</a></td>
-				    <td>0.68 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1V3dZZsfKK5Yg_DcHbtF-U-opXSJa--fh/view?usp=sharing" target="_blank">Conditionals</a></td>
-				    <td>0.22 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/16SujgkpdiR2DNKuhS2ag05icFtyDK5LT/view?usp=sharing" target="_blank">Earth</a></td>
-				    <td>0.68 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1wzCL2Xa3h8ltQLUZRQrePhl2Tk40F3Hx/view?usp=sharing" target="_blank">Friendship</a></td>
-				    <td>0.24 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1L39wi6Dz0hCzCeiA_4eeOwL3AFMrHeKE/view?usp=sharing" target="_blank">Fruits</a></td>
-				    <td>1.21 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1UnoGz1szmZkNuDXd1C6eHrKO8MpLkWiw/view?usp=sharing" target="_blank">Holidays in Great Britain</a></td>
-				    <td>3.46 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1RdLcQy6vLyHVLp8tZHxwTLlljq4NFy8E/view?usp=sharing" target="_blank">Holidays in USA</a></td>
-				    <td>3.18 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1OpZ0uNEdCLoG0GwqLuTyiI_t_Z0g3l2c/view?usp=sharing" target="_blank">How much?/How many?</a></td>
-				    <td>0.47 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1GQGkRlyTlrMr3FtdWmXld-k_LQP_dUIX/view?usp=sharing" target="_blank">If clause</a></td>
-				    <td>0.17 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1cGtSFLKILM-c2V4DWNURAzaISEhM_UK1/view?usp=sharing" target="_blank">Indirect speech</a></td>
-				    <td>0.18 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/16Os9Ia6UNuJcknD5K1hK5voSB5uWAiPK/view?usp=sharing" target="_blank">London</a></td>
-				    <td>2.09 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1fROnaXq7xm0rGaL7S1dkbFEg64W3jPph/view?usp=sharing" target="_blank">London 2</a></td>
-				    <td>2.09 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1mflAcP6mWwOEjjmG5YwN37SY8AgLURXf/view?usp=sharing" target="_blank">New York</a></td>
-				    <td>4.26 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1lFoeHW1JDneDKs29AHWhNjCM36to1Tgi/view?usp=sharing" target="_blank">Passive voice</a></td>
-				    <td>1.03 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1GbxFZ5wzIj3ociwoxu8TjErVgmL42nYi/view?usp=sharing" target="_blank">Passive voice 2</a></td>
-				    <td>0.93 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1jrFvEoIRTJn8Cphqi1qMNjNLoUxoVU11/view?usp=sharing" target="_blank">Past Perfect Simple & Continuous</a></td>
-				    <td>0.12 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1HhlvghwkcsNgIS8Cn2_jYTG-lLHDluen/view?usp=sharing" target="_blank">Prepositions</a></td>
-				    <td>0.38 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1_IL0EuesRybtQhSzjQ3j9FyHcnDscYhF/view?usp=sharing" target="_blank">Present Perfect</a></td>
-				    <td>0.89 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1DcbtajEmfFQT-R2eA0A0Q3feT7Ya38FI/view?usp=sharing" target="_blank">Present Perfect Continuous</a></td>
-				    <td>0.30 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/199x65uC9__oEhdlS3Ig04j_8X8nCrews/view?usp=sharing" target="_blank">Present Perfect Passive</a></td>
-				    <td>1.90 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/19RgHsa3BW9Jn4iy5T0BqPEK2I128QF9V/view?usp=sharing" target="_blank">Present Perfect Progressive</a></td>
-				    <td>1.61 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1WAvQKnmB2FX5rRUxFsiA95SGijverXdY/view?usp=sharing" target="_blank">Present Perfect Simple</a></td>
-				    <td>1.61 mb</td>
-				</tr>
-				
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1XrcyreN30cLmOOykzON132Yee40psJAq/view?usp=sharing" target="_blank">Present Perfect Simple & Continuous</a></td>
-				    <td>0.50 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1J_egiSTP51BlPypzS2gXzg8fUy5bvIxd/view?usp=sharing" target="_blank">Professions</a></td>
-				    <td>0.50 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1zQYreKvfw4BebjyUCehj9jW9XtS7QrO2/view?usp=sharing" target="_blank">Public Holidays in the USA</a></td>
-				    <td>3.90 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/18IlWgXXocc8topR2WPlP8CN-SyMT3HcG/view?usp=sharing" target="_blank">Reported Speech</a></td>
-				    <td>0.26 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1mcNCBKy8GKcqmuxZfb4VK2xyal0gw4Yn/view?usp=sharing" target="_blank">Reported Speech 2</a></td>
-				    <td>0.26 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/10DqUxcZcn-HBiPgB2UDEgiweFqqCZ23Q/view?usp=sharing" target="_blank">Seasons</a></td>
-				    <td>0.45 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1rOxUCAhRqXxw15yu0QSFxkj20tpuGAgd/view?usp=sharing" target="_blank">Second Conditional</a></td>
-				    <td>0.45 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1XWlK8vO0KtOIGjnLZ3rCb4K54cEqGPwv/view?usp=sharing" target="_blank">Technology</a></td>
-				    <td>0.30 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1ffR8bUGm_5qiNaUbKDydHt5Jj7HV8YeM/view?usp=sharing" target="_blank">Thanksgiving Day in the USA</a></td>
-				    <td>1.95 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/15CBPAaqDHRD35O93x2hrs5_9bNBKJ27u/view?usp=sharing" target="_blank">Tongue Twisters</a></td>
-				    <td>0.30 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/11IfrIihCK0QEECwL_Ds_eDGenvc_LOCn/view?usp=sharing" target="_blank">Traditions and holidays of Great Britain</a></td>
-				    <td>1.30 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/11r04Ir_A_GyZdppLmOFdGYSkmmh0kiMu/view?usp=sharing" target="_blank">Verb Tenses</a></td>
-				    <td>0.13 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1K7rxVVyyNi6VSUsMcDxUprGUGFXVfs9S/view?usp=sharing" target="_blank">Weather</a></td>
-				    <td>2.85 mb</td>
-				</tr>
-				<tr>
-				    <td><a href="https://drive.google.com/file/d/1M7g77CxJ7XqAOfPmJPe5sTZBfOfyOqtX/view?usp=sharing" target="_blank">William Shakespeare</a></td>
-				    <td>4.33 mb</td>
-				</tr>																
-				</table>
+	</div>
+
+	<div id="Paris" class="tabcontent">
+	  	<div class="cconte">
+			<br><br>
+			<div class="header"><br>Bize goşant goş!</div><br>
+				<p class="intext">Bize goşant goşmak üçin siz hem öz taýýarlan prezentasiýalaryňyzy biziň elektron adresimize ugradyp bilersiňiz!</p><br><br>
+				<p class="intext">Siz öz ýasan prezentasiýalaryňyz bilen gazanç etmek isleýärsiňizmi? Onda biz bilen habarlaşyň!</p><br>
+			
 		</div>
-		<div id="starcost">&#9733; belgili faýllar töleglidir. Olar hakynda doly maglumat üçin <a href="about.html">FAQ</a></div>
+
+	</div>
+
+	<div id="Tokyo" class="tabcontent">
+	  <div class="cconte">
+			<br>
+			<div class="header"><br>FAQ</div><br>
+
+			<p class="subheader"> &nbsp;Faýllary nädip ýüklemeli? &nbsp;</p><br>
+			<p class="intext">Islendik faýly ýükläp almak üçin faýlyň üstüne basyň, soňra ikinji sahypada açalan "Google Drive" penjiresinde "Ýükle" belgisine basyň!</p><br>
+			
+			<p class="subheader"> &nbsp;Ýüklenen faýllaryň açar sözüni nädip bilmeli? &nbsp;</p><br>
+			<p class="intext">Islendik faýly ýükläp alandan soňra onuň belgisini telefon belgimizi (+99361191440) SMS edip ugratmaly we soň ýazlan möçberindäki pul tölegini telefon belgä (+99361191440) geçirmeli we prezentasiýanyň açar sözi telefon belgiňize SMS bolup barar. </p><br>
+			<p class="intext" style="text-align: center;"><img src="i/1.png" width="80%"> </p><br>
+			<p class="instext" style="margin-bottom: 70px;">1) Şu ýerde siz satylýan faýlyň gysgaldylan nusgasyny görüp bilersiňiz!<br>
+								2) Ýyldyzjygyň basyp faýl hakynda maglumatlary görüp bilersiňiz!</p><br>
+
+			<p class="subheader" > &nbsp;Açar sözleri nädip aýyrmaly? &nbsp;</p><br>
+			<p class="intext">1) "File" ("Файл") girmeli:</p><br>
+			<p class="intext" style="text-align: center;"><img src="i/3.jpg" width="80%"> </p><br>
+			<p class="intext">2) "Protect Presentation" ("Зашита презентации"):</p><br>
+			<p class="intext" style="text-align: center;"><img src="i/4.jpg" width="80%"> </p><br>
+			<p class="intext">3) "Encrypt with password" ("Зашифровать с использованием пароля"):</p><br>
+			<p class="intext" style="text-align: center;"><img src="i/5.jpg" width="80%"> </p><br>
+			<p class="intext">4) Kody öçüriň we OK basyň:</p><br>
+			<p class="intext" style="text-align: center;"><img src="i/6.jpg" width="80%"> </p><br>
+			
+		</div>
+	</div>
 	</div>
 <!-- footer -->
 	<div id="footer">
@@ -935,24 +842,22 @@
   		document.getElementById("myDiv").style.display = "block";
 	}
 
-	function tablefunction() {
-  		var input, filter, table, tr, td, i, txtValue;
-	  		input = document.getElementById("myInput");
-	  		filter = input.value.toUpperCase();
-	  		table = document.getElementById("myTable");
-	  		tr = table.getElementsByTagName("tr");
-  		for (i = 0; i < tr.length; i++) {
-    		td = tr[i].getElementsByTagName("td")[0];
-	    	if (td) {
-		      	txtValue = td.textContent || td.innerText;
-		      	if (txtValue.toUpperCase().indexOf(filter) > -1) {
-		        	tr[i].style.display = "";
-		      	} 
-		      	else {
-		        	tr[i].style.display = "none";
-		      	}
-		    }       
-  		}
-	}
+	function openCity(cityName,elmnt,color,height) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+    elmnt.style.height = height;
+
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
 </script>
 </html>

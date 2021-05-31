@@ -178,7 +178,7 @@
 	  	padding: 10px 0;
 	  	position: absolute;
 	  	z-index: 5;
-	  	top: 110%;
+	  	top: 90%;
 	  	left: 50%;
 	  	margin-left: -60px;
 	}
@@ -331,24 +331,36 @@
 		box-shadow: 0 0 15px 0 inset #2E4052;
 		color: #2E4052;
 	}
-	#incont :hover a{
+	#incont :hover{
 		background-color: #4a6882;
-		color: #f2f2f2;
+	}
+	#incont :hover #compnam{
+		color:#f2f2f2;
+	}
+	#incont :hover #compnam1{
+		color: gold;
 	}
 	#incont :hover #compnam1 a{
 		color: gold;
 	}
+	#incont :hover #compnam a{
+		color: #f2f2f2;
+	}
 	#incont :hover #infcont1{
 		color: gold;
 	}
-	#compnam1 a{
-		color:#2E4052;
-		text-decoration: none;
+	#incont :hover #infcont{
+		color: #f2f2f2;
 	}
 	#compnam1 a{
 		color:#2E4052;
 		text-decoration: none;
 	}
+	#compnam a{
+		color:#2E4052;
+		text-decoration: none;
+	}
+	
 	#imgb{
 		display: inline-block;
 		position: relative;
@@ -366,7 +378,7 @@
 		position: relative;
 		margin-left: 18px;
 		margin-top: 20px;
-		width:70%;
+		width:60%;
 		height: auto;
 		max-height: 50%;
 		font-family: 'candara';
@@ -380,7 +392,7 @@
 		position: relative;
 		margin-left: 18px;
 		margin-top: 20px;
-		width:70%;
+		width:60%;
 		height: auto;
 		max-height: 50%;
 		font-family: 'candara';
@@ -417,6 +429,7 @@
 		float:left;
 		font-weight: bold;
 	}
+
 	#backstage{
 		display: inline-block;
 		margin:0 auto;
@@ -451,7 +464,7 @@
 		bottom: 0;
 		left:0;
 		width:100%;
-		height:24%;
+		height:20%;
 		background-color: #2E4052;
 		box-shadow: 5px 0px 18px 2px grey;
 		z-index: 4;
@@ -492,24 +505,15 @@
 	#aboutme{
 		display: none;
 	}
-	#copyright{
-		position: absolute;
-		padding-top: 5px;
-		padding-bottom: 10px;
-		width: 100%;
-		margin: auto;
-		bottom: 0;
-		left: 0;
-		z-index: 3;
-		text-align: center;
-		font-size: 1.2vw;
-		font-family: 'candara';
-		font-weight: bold;
-		color:#f2f2f2;
+	.copyright{
+		padding-top: 1px;
+		font-size: 0.8vw;
+		font-family: 'Century Gothic';
+		color:#adadad;
 	}
 /*phone*/
-		@media screen and (max-width: 800px){
-		/*header*/
+	@media screen and (max-width: 800px){
+	/*header*/
 			#navigation-container{
 				height: 14%;
 			}
@@ -583,7 +587,6 @@
 				width: 98%;
 				left: 1%;
 				height:58%;
-
 			}
 			#starcost{
 				font-size: 2.8vw;
@@ -600,19 +603,6 @@
 				margin: 6px auto;
 				border-radius: 12px;
 				border: 4px solid #2E4052;
-			}
-			#incont :hover a{
-				background-color: #4a6882;
-				color: #f2f2f2;
-			}
-			#incont :hover #compnam1{
-				color: gold;
-			}
-			#compnam1 a{
-				color: #2E4052;
-			}
-			#incont :hover #infcont1{
-				color: gold;
 			}
 			#imgb{
 				max-width: 40%;
@@ -654,7 +644,7 @@
 						bottom:0;
 						left:0;
 						width:100%;
-						height:24%;
+						height:20%;
 						background-color: #2E4052;
 						box-shadow: 5px 0px 18px 2px grey;
 						z-index: 4;
@@ -672,18 +662,19 @@
 					}
 					#futlogcont{
 						position: absolute;
-						top:0%;
-						left:0;
+						top:70%;
+						left:30%;
 						height:36%;
-						width:30%;
+						width:40%;
 						color:#f2f2f2;
 						font-family: 'Candara';
 						font-size:6vw;
 						font-weight: bold;
+						text-align: center;
 					}
 					#contact{
 						position: absolute;
-						top:40%;
+						top:15%;
 						right:0;
 						width:70%;
 						height:30%;
@@ -692,7 +683,7 @@
 					#aboutme{
 						display: block;
 						position: absolute;
-						top:30%;
+						top:10%;
 						left:0;
 						width:35%;
 						height:60%;
@@ -710,8 +701,8 @@
 						font-size: 3vw;
 						margin-right: 0;
 					}
-					#copyright{
-						font-size: 3vw;
+					.copyright{
+						font-size: 2.5vw;
 					}
 					.tooltip .tooltiptext{
 						top:-90%;	
@@ -785,27 +776,27 @@
 				</div>
 				<div id="boxx">
 					<div id="imgb" class="makswi"><img src="i/extra/poet.jpg" height="100%" width="100%"></div>
-					<div id="compnam"><a href="https://drive.google.com/file/d/1nu62_3f-xKJvhi6ETL4siV01RRXET9kd/view?usp=sharing" target="_blank"><a href="" target="_blank">XX asyr şahyr ýazyjylary tana</a></div>
+					<div id="compnam"><a href="https://drive.google.com/file/d/1nu62_3f-xKJvhi6ETL4siV01RRXET9kd/view?usp=sharing" target="_blank">XX asyr şahyr ýazyjylary tana</a></div>
 					<div id="infcont">Göwrümi: 3.27 mb</div>
 				</div>
 				<div id="boxx">
 					<div id="imgb"><img src="i/extra/tv.jpg" height="100%"></div>
-					<div id="compnam"><a href="https://drive.google.com/file/d/1h0ke_C7jiEQvqRQ2S7CBm90RagLXF6uc/view?usp=sharing" target="_blank"><a href="" target="_blank">Animals on TV</a></div>
+					<div id="compnam"><a href="https://drive.google.com/file/d/1h0ke_C7jiEQvqRQ2S7CBm90RagLXF6uc/view?usp=sharing" target="_blank">Animals on TV</a></div>
 					<div id="infcont">Göwrümi: 0.30 mb</div>
 				</div>
 				<div id="boxx">
 					<div id="imgb"><img src="i/extra/bathroom.jpg" height="100%"></div>
-					<div id="compnam"><a href="https://drive.google.com/file/d/1VotKQiO7osN-FIOErJLUclFLjEqa5vFS/view?usp=sharing" target="_blank"><a href="" target="_blank">Bathroom game</a></div>
+					<div id="compnam"><a href="https://drive.google.com/file/d/1VotKQiO7osN-FIOErJLUclFLjEqa5vFS/view?usp=sharing" target="_blank">Bathroom game</a></div>
 					<div id="infcont">Göwrümi: 0.42 mb</div>
 				</div>
 				<div id="boxx">
 					<div id="imgb"><img src="i/extra/bee.jpg" height="100%"></div>
-					<div id="compnam"><a href="https://drive.google.com/file/d/1l26PQzYJqDKhmy6W5T1MlLDMJlHn31_S/view?usp=sharing" target="_blank"><a href="" target="_blank">Busy Bee Game</a></div>
+					<div id="compnam"><a href="https://drive.google.com/file/d/1l26PQzYJqDKhmy6W5T1MlLDMJlHn31_S/view?usp=sharing" target="_blank">Busy Bee Game</a></div>
 					<div id="infcont">Göwrümi: 0.75 mb</div>
 				</div>
 				<div id="boxx">
 					<div id="imgb" class="makswi"><img src="i/extra/yol.jpg" height="100%" width="100%"></div>
-					<div id="compnam"><a href="https://drive.google.com/file/d/1Igsb-SD9qB7WNwrk0T3zHhywa3STO21h/view?usp=sharing" target="_blank"><a href="" target="_blank">Çylşyrymly ýol</a></div>
+					<div id="compnam"><a href="https://drive.google.com/file/d/1Igsb-SD9qB7WNwrk0T3zHhywa3STO21h/view?usp=sharing" target="_blank">Çylşyrymly ýol</a></div>
 					<div id="infcont">Göwrümi: 0.76 mb</div>
 				</div>
 				<div id="boxx">
@@ -820,8 +811,8 @@
 				</div>
 				<div id="boxx">
 					<div id="imgb"><img src="i/extra/korperteile.jpg" height="100%"></div>
-					<div id="compnam"><a href="https://drive.google.com/file/d/1DWxIbZjo5-RLNIPt5rlgo2ZdvL8aM1Ml/view?usp=sharing" target="_blank"><a href="" target="_blank">Körperteile</a></div>
-					<div id="infcstyle="max-width: 24%"ont">Göwrümi: 0.64 mb</div>
+					<div id="compnam"><a href="https://drive.google.com/file/d/1DWxIbZjo5-RLNIPt5rlgo2ZdvL8aM1Ml/view?usp=sharing" target="_blank">Körperteile</a></div>
+					<div id="infcont">Göwrümi: 0.64 mb</div>
 				</div>
 				<div id="boxx">
 					<div id="imgb"><img src="i/extra/bliard1.jpg" height="100%"></div>
@@ -944,7 +935,8 @@
 <!-- footer -->
 	<div id="footer">
 		<div id="futcont">
-			<div id="futlogcont"><a href="index.html" style="text-decoration: none; color: #f2f2f2;">MUGALLYM</a></div>
+			<div id="futlogcont"><a href="index.html" style="text-decoration: none; color: #f2f2f2;">MUGALLYM</a><div class="copyright">Share your knowledge, 2021
+			</div></div>
 			<div id="contact">
 				<div class="social-buttons">
   					<div class="tooltip"><span class="tooltiptext">habarlash.me@gmail.com</span>
@@ -980,8 +972,7 @@
 			</div>
 			
 		</div>
-		<div id="copyright">"Mugallym" - share your knowledge, 2021
-			</div>
+		
 	</div>
 </div>
 </body>
